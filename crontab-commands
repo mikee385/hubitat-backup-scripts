@@ -1,0 +1,8 @@
+# Open the crontab file of the current user for editing
+crontab -e
+
+# Add this line to the crontab file and save it
+0 3 * * * cd /home/pi/Projects/hubitat-backup-scripts; ./download-backup.sh
+
+# Confirm that the crontab file was updated correctly
+crontab -l
